@@ -1,0 +1,29 @@
+	CREATE TABLE VEHICLES( 
+	REGISTRATION_NR nvarchar(10) constraint vehicles_pk primary key not null,
+	TYPE nvarchar(30) not null,                       
+	BRAND nvarchar(30) not null,
+	MANUFACTURING_YEAR int not null,
+	COLOR nvarchar(30) not null
+	);
+
+	CREATE TABLE CUSTOMERS(
+	CNP nvarchar(13) constraint customers_pk primary key not null,	
+	LAST_NAME nvarchar(30) not null,	
+	FIRST_NAME nvarchar(30) not null,
+	GENDER nvarchar(20),	
+	LICENSE_YEAR int not null
+	);
+
+	CREATE TABLE CONTRACTS(
+	CONTRACT_ID int IDENTITY(1,1) constraint contracts_pk primary key not null,
+	RENT_START datetime not null,
+	RENT_END datetime not null,
+	MILEAGE int not null,
+	CNP nvarchar(13) not null,
+	REGISTRATION_NR nvarchar(10) not null	
+	);
+
+
+	ALTER TABLE CONTRACTS ADD FOREIGN KEY (REGISTRATION_NR) REFERENCES VEHICLES(REGISTRATION_NR);
+
+	ALTER TABLE CONTRACTS ADD FOREIGN KEY (CNP) REFERENCES CUSTOMERS(CNP);
