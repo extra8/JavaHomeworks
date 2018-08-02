@@ -1,4 +1,4 @@
-package dataTypes;
+package vehicle_Implementation;
 
 
 public class Vehicle
@@ -9,12 +9,6 @@ public class Vehicle
 	private String registrationNumber;
 	private String color;
 	private CarType type;
-	
-	
-	public Vehicle()
-	{
-		
-	}
 	
 	public Vehicle(String registrationNumber, CarType type, String carMaker, int manufacturingYear, String color) 
 	{
