@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    
+    <context:component-scan base-package="com.siemens.ctbav.internship."/>
+
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--<property name="driverClassName" value="com.mysql.jdbc.Driver"/>-->
+        <property name="url" value="jdbc:sqlserver://127.0.0.1:1433;databaseName=VEHICLE_RENTAL;integratedSecurity=true"/>
+    </bean>
+    
+    <bean class="com.siemens.ctbav.internship.vehicle_Implementation.VehicleLogic" id="vehicleLogic">
+        <property name="jdbcTemplate" ref="jdbcTemplateSQL"/>
+    </bean>
+        
+    <bean class="com.siemens.ctbav.internship.person_Implementation.PersonLogic" id="personLogic">
+        <property name="jdbcTemplate" ref="jdbcTemplateSQL"/>
+    </bean>
+    
+    <bean class="com.siemens.ctbav.internship.contract_Implementation.ContractLogic" id="contractLogic">
+        <property name="jdbcTemplate" ref="jdbcTemplateSQL"/>
+    </bean>
+
+    <bean class="org.springframework.jdbc.core.JdbcTemplate" id="jdbcTemplateSQL">
+        <constructor-arg index="0" ref="dataSource"></constructor-arg>
+    </bean>
+
+    
+</beans>
