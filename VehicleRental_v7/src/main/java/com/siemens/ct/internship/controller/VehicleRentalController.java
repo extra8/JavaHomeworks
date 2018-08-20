@@ -10,12 +10,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.siemens.ctbav.internship.contract_Implementation.Contract;
-import com.siemens.ctbav.internship.contract_Implementation.ContractLogic;
-import com.siemens.ctbav.internship.person_Implementation.Person;
-import com.siemens.ctbav.internship.person_Implementation.PersonLogic;
-import com.siemens.ctbav.internship.vehicle_Implementation.Vehicle;
-import com.siemens.ctbav.internship.vehicle_Implementation.VehicleLogic;
+import com.siemens.ctbav.internship.contract.implementation.Contract;
+import com.siemens.ctbav.internship.contract.implementation.ContractLogic;
+import com.siemens.ctbav.internship.person.implementation.Person;
+import com.siemens.ctbav.internship.person.implementation.PersonLogic;
+import com.siemens.ctbav.internship.vehicle.implementation.Vehicle;
+import com.siemens.ctbav.internship.vehicle.implementation.VehicleLogic;
 
 @Controller
 public class VehicleRentalController {

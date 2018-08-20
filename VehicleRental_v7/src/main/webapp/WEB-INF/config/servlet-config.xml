@@ -21,15 +21,15 @@
         <property name="url" value="jdbc:sqlserver://127.0.0.1:1433;databaseName=VEHICLE_RENTAL;integratedSecurity=true"/>
     </bean>
 
-    <bean class="com.siemens.ctbav.internship.vehicle_Implementation.VehicleLogic" id="vehicleLogic">
+    <bean class="com.siemens.ctbav.internship.vehicle.implementation.VehicleLogic" id="vehicleLogic">
         <property name="jdbcTemplate" ref="jdbcTemplateSQL"/>
     </bean>
     
-    <bean class="com.siemens.ctbav.internship.person_Implementation.PersonLogic" id="personLogic">
+    <bean class="com.siemens.ctbav.internship.person.implementation.PersonLogic" id="personLogic">
         <property name="jdbcTemplate" ref="jdbcTemplateSQL"/>
     </bean>
     
-    <bean class="com.siemens.ctbav.internship.contract_Implementation.ContractLogic" id="contractLogic">
+    <bean class="com.siemens.ctbav.internship.contract.implementation.ContractLogic" id="contractLogic">
         <property name="jdbcTemplate" ref="jdbcTemplateSQL"/>
     </bean>
 

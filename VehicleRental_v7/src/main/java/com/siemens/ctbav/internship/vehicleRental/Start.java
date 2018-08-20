@@ -7,12 +7,12 @@ import java.util.Scanner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.siemens.ctbav.internship.contract_Implementation.Contract;
-import com.siemens.ctbav.internship.contract_Implementation.ContractLogic;
-import com.siemens.ctbav.internship.person_Implementation.Person;
-import com.siemens.ctbav.internship.person_Implementation.PersonLogic;
-import com.siemens.ctbav.internship.vehicle_Implementation.Vehicle;
-import com.siemens.ctbav.internship.vehicle_Implementation.VehicleLogic;
+import com.siemens.ctbav.internship.contract.implementation.Contract;
+import com.siemens.ctbav.internship.contract.implementation.ContractLogic;
+import com.siemens.ctbav.internship.person.implementation.Person;
+import com.siemens.ctbav.internship.person.implementation.PersonLogic;
+import com.siemens.ctbav.internship.vehicle.implementation.Vehicle;
+import com.siemens.ctbav.internship.vehicle.implementation.VehicleLogic;
 
 public class Start 
 {	

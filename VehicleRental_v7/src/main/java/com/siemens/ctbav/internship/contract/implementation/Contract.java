@@ -1,4 +1,4 @@
-package com.siemens.ctbav.internship.contract_Implementation;
+package com.siemens.ctbav.internship.contract.implementation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 

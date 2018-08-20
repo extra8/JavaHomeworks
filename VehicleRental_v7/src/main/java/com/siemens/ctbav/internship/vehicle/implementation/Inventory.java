@@ -1,4 +1,4 @@
-package com.siemens.ctbav.internship.vehicle_Implementation;
+package com.siemens.ctbav.internship.vehicle.implementation;
 
 import java.util.List;
 

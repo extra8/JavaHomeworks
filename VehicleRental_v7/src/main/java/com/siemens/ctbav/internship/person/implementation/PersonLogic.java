@@ -1,4 +1,4 @@
-package com.siemens.ctbav.internship.person_Implementation;
+package com.siemens.ctbav.internship.person.implementation;
 
 import java.util.ArrayList;
 import java.util.List;

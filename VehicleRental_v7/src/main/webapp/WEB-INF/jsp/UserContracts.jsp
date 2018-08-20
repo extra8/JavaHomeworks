@@ -2,7 +2,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page import="java.util.ArrayList" %> 
 <%@ page import="java.util.List" %> 
-<%@ page import="com.siemens.ctbav.internship.contract_Implementation.Contract" %> 
+<%@ page import="com.siemens.ctbav.internship.contract.implementation.Contract" %> 
 <%@ page isELIgnored="false" %>
 
  
@@ -26,6 +26,7 @@ a.button {
 </head>
 <body background="https://i.imgur.com/R3cpQ9R.gif" style="font-family:'Rubik'">
 <a href="http://localhost:8080/VehicleRental/coa.html" class="button"><<</a>	
+<h1 style="color:#0080ff;" align="center">Contracts found :</h1>
 
 <br>
 
